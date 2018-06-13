@@ -1,0 +1,12 @@
+<%- include('parts/header') -%>
+<main>
+	
+	<% zeldas.forEach(function(zelda) { %>
+		<div class="hero-container">
+			<h2> <%- zelda.name -%></h2>
+			<p><%- zelda.prix -%></p>
+			<button type="" name="button" data-url="<%- zelda.url -%>">Voir</button>
+		</div>
+	<% }); %>
+</main>
+<%- include('parts/footer') -%>
